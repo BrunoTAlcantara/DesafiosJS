@@ -78,7 +78,7 @@ pessoa.mostrarIdade = () => {
 }
 /*
 Crie um método chamado `mostrarPeso`, que retorne a frase:
-- "Eu peso [PESO]Kg."
+- "Eu peso [PESO] Kg."
 */
 pessoa.mostrarPeso = () => {
   return console.log(`Eu peso ${pessoa.peso} KG`)
@@ -176,7 +176,7 @@ pessoa.apresentacao = () => {
   if ( pessoa.sexo === 'f' ) {
      sexo = 'a'
     }
-   if ( pesssoa.idade <= 1 ) {
+   if ( pessoa.idade <= 1 ) {
     idade = 'anos'
   }
    if (pessoa.caminhouQuantosMetros <=1 ) {

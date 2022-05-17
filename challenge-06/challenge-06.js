@@ -5,7 +5,9 @@ Declare uma variável chamada `championship` que receberá o nome do campeonato,
 e imprima o nome desse campeonato no console.
 */
 // ?
+let championship = 'Paulista'
 
+console.log(championship)
 /*
 Declare uma variável chamada `teams`, que receberá um array com 5 elementos.
 Os elementos serão nomes de times do campeonato escolhido, e os nomes devem
@@ -13,6 +15,8 @@ estar na ordem em que eles aparecem na tabela no momento da solução desse
 desafio.
 */
 // ?
+
+let teams = ['corinthians','sao paulo','palmeiras','bragantino','santos']
 
 console.log( 'Times que estão participando do campeonato:', teams );
 
@@ -25,7 +29,7 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
     que está nessa posição no array criado acima com os nomes dos times.
     --------------
     Dica: lembre-se que arrays começam no índice zero, então a posição passada
-    deve ser sempre um número a mais que o índice do array ;)
+    deve ser sempre um número a mais que o índice do array ;
     --------------
     - A função só deve retornar a frase acima somente se o time estiver entre
     os 5 primeiros.
@@ -33,19 +37,27 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
     "Não temos a informação do time que está nessa posição."
 */
 // ?
+let showTeamPosition =  (num) => {
+  let teams = ['corinthians','sao paulo','palmeiras','bragantino','santos']
+ console.log(`O time que está em ${num} lugar é o ${teams[num-1]}.`) ;
+}
 
+showTeamPosition(3)
 /*
 Escolha 4 times do campeonato selecionado e mostre a posição dele, usando a
 função acima. Entre esses 4, adicione 1 que não esteja entre os 5 primeiros.
 */
 // ?
-
+showTeamPosition(1)
+showTeamPosition(2)
+showTeamPosition(3)
+showTeamPosition(6)
 /*
 Mostre os números de 20 a 30 no console (inclusive o 30), usando a estrutura de
 repetição "while".
 */
 // ?
-
+ while (20 <= 30 )
 /*
 Crie uma função chamada `convertToHex`, com as seguintes características:
     - A função recebe uma cor por parâmetro, do tipo string. Exemplo: "red";
